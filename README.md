@@ -51,20 +51,10 @@ El Docker compose creará varios contenedores:
 Ejecutar el siguiente script:
 
 ```sh
-docker-compose up
+docker-compose up -d
 ```
 
 Para ver el estado del cluster, abrir el [master UI](http://localhost:5080) 
-
-## Desplegar una aplicación en el cluster
-
-Se hará lanzando un contenedor spark-submit.
-
-Ejecutar el siguiente script:
-
-```sh
-spark-submit/run.sh -a "/spark/bin/run-example graphx.AggregateMessagesExample"
-```
 
 ### Conectarse al master por consola y ejecutar los scripts de demo
 
