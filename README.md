@@ -67,6 +67,23 @@ docker exec -it spark-master bash
 Desde el contenedor ejecutar spark-shell:
 
 ```sh
-spark/bin/spark-shell
-:load /opt/spark-apps/01.graph.sample.scala
+$> spark/bin/spark-shell
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+Spark context Web UI available at http://spark-master:4040
+Spark context available as 'sc' (master = local[*], app id = local-1575749832043).
+Spark session available as 'spark'.
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /___/ .__/\_,_/_/ /_/\_\   version 2.4.4
+      /_/
+         
+Using Scala version 2.11.12 (OpenJDK 64-Bit Server VM, Java 1.8.0_111-internal)
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala> :load /opt/spark-apps/01.graph.sample.scala
 ```
